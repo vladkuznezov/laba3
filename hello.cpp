@@ -1,7 +1,18 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    std::cout << "Привет! Это тест CI/CD конвейера." << std::endl;
-    std::cout << "Программа успешно собрана автоматически!" << std::endl;
+    double a, b;
+    cout << "Введите первое число: ";
+    cin >> a;
+    cout << "Введите второе число: ";
+    cin >> b;
+    
+    cout << "Сумма: " << a + b << endl;
+    cout << "Разность: " << a - b << endl;
+    cout << "Произведение: " << a * b << endl;
+    if (b != 0) {
+        cout << "Частное: " << a / b << endl;
+    }
     return 0;
 }
